@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Button } from '../ui/Button';
-import { BarChart3, Activity, Cloud } from 'lucide-react';
+import { BarChart3, Activity } from 'lucide-react';
 
 export const Hero = () => {
   return (
