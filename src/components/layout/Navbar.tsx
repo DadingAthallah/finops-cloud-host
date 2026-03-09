@@ -1,8 +1,24 @@
+import { useState, useEffect } from 'react';
 import { Button } from '../ui/Button';
 
 export const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed w-full z-50 top-0 bg-black/40 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
+    <nav className={`fixed w-full z-50 top-0 transition-all duration-300 ${
+      isScrolled 
+        ? 'py-3 bg-black/40 backdrop-blur-xl border-b border-white/5' 
+        : 'py-5 bg-transparent border-b border-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           

@@ -1,14 +1,27 @@
 import { motion } from 'framer-motion';
 import { Button } from '../ui/Button';
 import { BarChart3, Activity } from 'lucide-react';
+import backgroundVideo from '../../assets/test_remix.webm';
 
 export const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-bg-dark">
-      {/* Subtle Background */}
-      <div className="absolute top-0 inset-x-0 h-96 bg-hero-gradient opacity-10 pointer-events-none blur-3xl"></div>
+    <section className="relative pt-20 pb-20 overflow-hidden bg-[#101010] min-h-screen flex flex-col justify-center">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-70"
+          src={backgroundVideo}
+        />
+      </div>
+
+      {/* Subtle Background Overlay */}
+      <div className="absolute top-0 inset-x-0 h-96 bg-hero-gradient opacity-5 pointer-events-none blur-3xl z-0"></div>
       
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 z-10">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,9 +61,9 @@ export const Hero = () => {
         transition={{ duration: 0.7, delay: 0.4 }}
         className="mt-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
       >
-        <div className="rounded-2xl border border-white/10 bg-[#050505] overflow-hidden shadow-2xl">
+        <div className="rounded-2xl border border-white/10 bg-[#101010] overflow-hidden shadow-2xl">
           {/* Mac window header mockup */}
-          <div className="flex items-center px-4 py-3 border-b border-white/5 bg-[#0a0a0a]">
+          <div className="flex items-center px-4 py-3 border-b border-white/5 bg-[#101010]">
             <div className="flex space-x-2 opacity-50">
               <div className="w-3 h-3 rounded-full bg-slate-600"></div>
               <div className="w-3 h-3 rounded-full bg-slate-600"></div>
@@ -60,7 +73,7 @@ export const Hero = () => {
           </div>
           
           {/* Dashboard Body */}
-          <div className="p-6 bg-[#050505] grid grid-cols-12 gap-6 relative">
+          <div className="p-6 bg-[#101010] grid grid-cols-12 gap-6 relative">
 
             {/* Top KPI row */}
             <div className="col-span-12 grid grid-cols-4 gap-6">
@@ -139,7 +152,7 @@ export const Hero = () => {
                     key={i}
                     whileHover={{ scale: 1.02 }}
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
-                    className="flex flex-col p-4 rounded-xl bg-[#0a0a0a] border border-white/5 cursor-pointer group"
+                    className="flex flex-col p-4 rounded-xl bg-[#101010] border border-white/5 cursor-pointer group"
                   >
                     <div className="flex justify-between items-start mb-2">
                       <div>

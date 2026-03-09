@@ -1,21 +1,35 @@
 import { Button } from '../ui/Button';
+import backgroundVideo from '../../assets/test_remix.webm';
 
 export const Footer = () => {
   return (
-    <footer className="bg-black pt-24 pb-12 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-[#101010] pt-0 pb-12 border-t border-white/5">
+      {/* Top CTA - Full Width Background like Hero */}
+      <div className="text-center relative pt-32 pb-0 overflow-hidden mb-24">
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-30"
+            src={backgroundVideo}
+          />
+        </div>
         
-        {/* Top CTA */}
-        <div className="text-center mb-24 relative">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-64 bg-white/[0.02] blur-3xl pointer-events-none"></div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 relative z-10 tracking-tight">Get started with CostPilot</h2>
+        {/* Subtle Background Overlay */}
+        <div className="absolute top-0 inset-x-0 h-full bg-hero-gradient opacity-10 pointer-events-none blur-3xl z-0"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight">Get started with CostPilot</h2>
           <Button variant="primary" className="bg-white text-black hover:bg-slate-200 px-8 py-3 text-base shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)] rounded-full font-bold">
             Book a live demo ↗
           </Button>
           
-          <div className="mt-16 mx-auto max-w-4xl px-4 pointer-events-none">
+          <div className="mt-20 mx-auto max-w-4xl px-4 pointer-events-none">
              {/* High Fidelity Footer Dashboard Graphic */}
-             <div className="h-64 border border-white/5 border-b-0 rounded-t-3xl bg-[#050505] overflow-hidden relative flex flex-col shadow-2xl">
+             <div className="h-64 border border-white/5 border-b-0 rounded-t-3xl bg-[#050505] overflow-hidden relative flex flex-col shadow-2xl translate-y-[1px]">
                 {/* Header */}
                 <div className="h-10 border-b border-white/5 bg-white/[0.02] flex items-center px-4 justify-between">
                    <div className="flex space-x-2">
@@ -57,7 +71,9 @@ export const Footer = () => {
              </div>
           </div>
         </div>
+      </div>
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 border-t border-slate-800/50 pt-12">
           <div className="col-span-2">
             <span className="text-xl font-bold text-white mb-6 block">CostPilot</span>

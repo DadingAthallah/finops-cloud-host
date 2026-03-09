@@ -9,7 +9,7 @@ export const SocialProof = () => {
   ];
 
   return (
-    <section className="py-12 border-t border-b border-white/5 bg-[#050505]">
+    <section className="py-12 border-y border-white/5 bg-[#101010]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center gap-12 items-center grayscale">
           {logos.map((logo) => (
