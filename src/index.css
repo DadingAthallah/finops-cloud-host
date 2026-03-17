@@ -21,7 +21,7 @@
 
 @layer base {
   body {
-    @apply bg-bg-dark text-slate-300 font-sans antialiased selection:bg-brand-blue/30 selection:text-white;
+    @apply bg-bg-dark text-neutral-300 font-sans antialiased selection:bg-brand-blue/30 selection:text-white;
   }
 }
 
@@ -38,4 +38,11 @@
   100% {
     stroke-dashoffset: 0;
   }
+}
+
+/* Hide Unicorn Studio Watermark */
+[data-us-project] a, a[href*="unicorn.studio"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }

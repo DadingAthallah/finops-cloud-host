@@ -35,7 +35,7 @@ export const UseCases = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Built for the whole team.
             </h2>
-            <p className="text-slate-400 max-w-2xl">
+            <p className="text-neutral-400 max-w-2xl">
               CostPilot brings accountability and visibility to every role, ensuring cloud cost is everyone's responsibility but no one's burden.
             </p>
           </motion.div>
@@ -56,7 +56,7 @@ export const UseCases = () => {
                   <useCase.icon className="w-6 h-6 text-brand-blue" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4 font-mono uppercase tracking-tight">{useCase.title}</h3>
-                <p className="text-slate-400 text-sm mb-8 leading-relaxed">
+                <p className="text-neutral-400 text-sm mb-8 leading-relaxed">
                   {useCase.description}
                 </p>
                 <div className="space-y-3">

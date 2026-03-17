@@ -14,7 +14,7 @@ export const PlatformOverview = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Unify your cloud fleet into a single source of truth.
             </h2>
-            <p className="text-slate-400 text-lg mb-[64px]">
+            <p className="text-neutral-400 text-lg mb-[64px]">
               CostPilot sits between your infrastructure and your budget, providing a high-fidelity lens into every dollar spent across AWS, GCP, and Azure.
             </p>
             
@@ -30,7 +30,7 @@ export const PlatformOverview = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">{feature.title}</h4>
-                    <p className="text-slate-400 text-sm">{feature.desc}</p>
+                    <p className="text-neutral-400 text-sm">{feature.desc}</p>
                   </div>
                 </div>
               ))}
@@ -53,7 +53,7 @@ export const PlatformOverview = () => {
                     {['AWS', 'Azure', 'GCP'].map((cloud) => (
                       <div key={cloud} className="bg-[#101010] border border-white/10 p-4 rounded-2xl text-center shadow-lg transform transition hover:scale-105 hover:border-brand-blue/30 flex flex-col items-center">
                         <Cloud className="w-6 h-6 text-brand-blue/70 mb-2" />
-                        <span className="text-[11px] font-bold tracking-widest text-slate-300">{cloud}</span>
+                        <span className="text-[11px] font-bold tracking-widest text-neutral-300">{cloud}</span>
                       </div>
                     ))}
                   </div>
@@ -109,7 +109,7 @@ export const PlatformOverview = () => {
                     {['Dashboards', 'Reports'].map((outcome) => (
                       <div key={outcome} className="bg-[#101010] border border-white/10 p-5 rounded-2xl text-center shadow-lg transform transition hover:scale-105 hover:border-brand-blue/30 flex flex-col items-center">
                         <BarChart className="w-6 h-6 text-brand-blue/70 mb-3" />
-                        <span className="text-[12px] font-bold tracking-widest text-slate-300">{outcome}</span>
+                        <span className="text-[12px] font-bold tracking-widest text-neutral-300">{outcome}</span>
                       </div>
                     ))}
                   </div>

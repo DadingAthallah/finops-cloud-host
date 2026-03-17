@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import { HomeV2 } from './HomeV2';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/home/Hero';
 import { SocialProof } from './components/home/SocialProof';
@@ -14,8 +16,24 @@ import { FAQ } from './components/home/FAQ';
 import { Footer } from './components/layout/Footer';
 
 function App() {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const onLocationChange = () => {
+      setCurrentPath(window.location.pathname);
+    };
+
+    window.addEventListener('popstate', onLocationChange);
+    return () => window.removeEventListener('popstate', onLocationChange);
+  }, []);
+
+  if (currentPath === '/v2') {
+    return <HomeV2 />;
+  }
+
+  // Fallback to V1
   return (
-    <div className="min-h-screen bg-bg-dark text-slate-100 font-sans selection:bg-brand-blue/30 selection:text-white">
+    <div className="min-h-screen bg-bg-dark text-neutral-100 font-sans selection:bg-brand-blue/30 selection:text-white">
       <Navbar />
       <main>
         {/* Actual Content Sections (11 Total) */}

@@ -22,9 +22,9 @@ export const Testimonials = () => {
           <motion.div whileHover={{ y: -5 }} className="bg-[#101010] border border-white/5 p-8 rounded-3xl hover:border-white/20 transition-colors group cursor-pointer shadow-xl">
             <div className="flex justify-between items-start mb-4">
               <span className="text-3xl font-bold font-mono text-white tracking-tighter">$420k</span>
-              <ArrowUpRight className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
+              <ArrowUpRight className="w-5 h-5 text-neutral-500 group-hover:text-white transition-colors" />
             </div>
-            <p className="text-[13px] text-slate-400 mb-8 font-medium">annualized savings found in unattached EC2 volumes</p>
+            <p className="text-[13px] text-neutral-400 mb-8 font-medium">annualized savings found in unattached EC2 volumes</p>
             <div className="text-sm font-bold text-white tracking-tight">Fintech Startup</div>
           </motion.div>
 
@@ -32,9 +32,9 @@ export const Testimonials = () => {
           <motion.div whileHover={{ y: -5 }} className="bg-[#101010] border border-white/5 p-8 rounded-3xl hover:border-white/20 transition-colors group cursor-pointer shadow-xl">
              <div className="flex justify-between items-start mb-4">
               <span className="text-3xl font-bold font-mono text-white tracking-tighter">45 min</span>
-               <ArrowUpRight className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
+               <ArrowUpRight className="w-5 h-5 text-neutral-500 group-hover:text-white transition-colors" />
             </div>
-            <p className="text-[13px] text-slate-400 mb-8 font-medium">mean time to resolve cost anomalies vs 3 days previously</p>
+            <p className="text-[13px] text-neutral-400 mb-8 font-medium">mean time to resolve cost anomalies vs 3 days previously</p>
             <div className="text-sm font-bold text-white tracking-tight italic">E-Commerce Platform</div>
           </motion.div>
 
@@ -43,13 +43,13 @@ export const Testimonials = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-[0.02] rounded-full blur-3xl -mr-10 -mt-10 group-hover:opacity-[0.05] transition-opacity"></div>
             <div className="relative z-10">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 rounded-full bg-slate-800"></div>
+                <div className="w-10 h-10 rounded-full bg-neutral-800"></div>
                 <div>
                   <div className="text-sm font-bold text-white tracking-tight">Sarah Jenkins</div>
-                  <div className="text-[11px] font-medium tracking-wide text-slate-500 uppercase">VP of Engineering</div>
+                  <div className="text-[11px] font-medium tracking-wide text-neutral-500 uppercase">VP of Engineering</div>
                 </div>
               </div>
-              <p className="text-slate-300 text-[15px] leading-relaxed mb-8 font-medium">
+              <p className="text-neutral-300 text-[15px] leading-relaxed mb-8 font-medium">
                 "Before CostPilot, our finance team would complain about cloud bills weeks after the damage was done. Now, we get Slack alerts the moment an idle instance is spun up and forgotten. It completely changed our engineering culture."
               </p>
             </div>
@@ -60,9 +60,9 @@ export const Testimonials = () => {
           <motion.div whileHover={{ y: -5 }} className="bg-[#101010] border border-white/5 p-8 rounded-3xl hover:border-white/20 transition-colors group cursor-pointer shadow-xl">
              <div className="flex justify-between items-start mb-4">
               <span className="text-3xl font-bold font-mono text-white tracking-tighter">100%</span>
-               <ArrowUpRight className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
+               <ArrowUpRight className="w-5 h-5 text-neutral-500 group-hover:text-white transition-colors" />
             </div>
-            <p className="text-[13px] text-slate-400 mb-8 font-medium">spend visibility mapped directly to product teams</p>
+            <p className="text-[13px] text-neutral-400 mb-8 font-medium">spend visibility mapped directly to product teams</p>
             <div className="text-sm font-bold text-white tracking-tight">SaaS Provider</div>
           </motion.div>
 
@@ -70,9 +70,9 @@ export const Testimonials = () => {
           <motion.div whileHover={{ y: -5 }} className="bg-[#101010] border border-white/5 p-8 rounded-3xl hover:border-white/20 transition-colors group cursor-pointer shadow-xl">
              <div className="flex justify-between items-start mb-4">
               <span className="text-3xl font-bold font-mono text-white tracking-tighter">0</span>
-               <ArrowUpRight className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
+               <ArrowUpRight className="w-5 h-5 text-neutral-500 group-hover:text-white transition-colors" />
             </div>
-            <p className="text-[13px] text-slate-400 mb-8 font-medium">end-of-month budget surprises in Q3</p>
+            <p className="text-[13px] text-neutral-400 mb-8 font-medium">end-of-month budget surprises in Q3</p>
             <div className="text-sm font-bold text-white tracking-tight">Data Analytics Co.</div>
           </motion.div>
           

@@ -37,7 +37,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto"
+          className="text-lg md:text-xl text-neutral-400 mb-10 max-w-2xl mx-auto"
         >
           No code change, no downtime, and no organizational change. CostPilot brings real-time accountability to your engineering spend.
         </motion.p>
@@ -65,11 +65,11 @@ export const Hero = () => {
           {/* Mac window header mockup */}
           <div className="flex items-center px-4 py-3 border-b border-white/5 bg-[#101010]">
             <div className="flex space-x-2 opacity-50">
-              <div className="w-3 h-3 rounded-full bg-slate-600"></div>
-              <div className="w-3 h-3 rounded-full bg-slate-600"></div>
-              <div className="w-3 h-3 rounded-full bg-slate-600"></div>
+              <div className="w-3 h-3 rounded-full bg-neutral-600"></div>
+              <div className="w-3 h-3 rounded-full bg-neutral-600"></div>
+              <div className="w-3 h-3 rounded-full bg-neutral-600"></div>
             </div>
-            <div className="ml-4 text-xs font-mono text-slate-500 font-medium">app.costpilot.com/overview</div>
+            <div className="ml-4 text-xs font-mono text-neutral-500 font-medium">app.costpilot.com/overview</div>
           </div>
           
           {/* Dashboard Body */}
@@ -89,11 +89,11 @@ export const Hero = () => {
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   className="bg-white/[0.02] border border-white/5 rounded-2xl p-5"
                 >
-                  <p className="text-slate-500 text-[10px] mb-2 font-semibold uppercase tracking-widest">{kpi.label}</p>
+                  <p className="text-neutral-500 text-[10px] mb-2 font-semibold uppercase tracking-widest">{kpi.label}</p>
                   <div className="flex items-baseline justify-between">
                     <h3 className="text-2xl font-mono font-bold text-white tracking-tight">{kpi.value}</h3>
                     <span className={`text-[10px] px-2 py-1 rounded-full font-medium ${
-                      kpi.neutral ? 'bg-white/10 text-slate-300' :
+                      kpi.neutral ? 'bg-white/10 text-neutral-300' :
                       kpi.warning ? 'bg-red-500/10 text-red-400' :
                       kpi.up ? 'bg-emerald-500/10 text-emerald-400' : 'bg-brand-blue/10 text-brand-blue'
                     }`}>
@@ -109,8 +109,8 @@ export const Hero = () => {
                <div className="flex justify-between items-center mb-6">
                  <h4 className="text-white font-medium flex items-center text-sm tracking-tight"><BarChart3 className="w-4 h-4 mr-2" /> Daily Spend by Provider</h4>
                  <div className="flex space-x-4 text-xs font-medium tracking-tight">
-                   <span className="flex items-center text-slate-400"><div className="w-2 h-2 rounded-sm bg-orange-500 mr-2"></div>AWS</span>
-                   <span className="flex items-center text-slate-400"><div className="w-2 h-2 rounded-sm bg-blue-500 mr-2"></div>GCP</span>
+                   <span className="flex items-center text-neutral-400"><div className="w-2 h-2 rounded-sm bg-orange-500 mr-2"></div>AWS</span>
+                   <span className="flex items-center text-neutral-400"><div className="w-2 h-2 rounded-sm bg-blue-500 mr-2"></div>GCP</span>
                  </div>
                </div>
                
@@ -157,7 +157,7 @@ export const Hero = () => {
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <p className="text-sm text-white font-medium tracking-tight mb-0.5">{anomaly.service}</p>
-                        <p className="text-[11px] text-slate-500 font-medium">{anomaly.region} • {anomaly.time}</p>
+                        <p className="text-[11px] text-neutral-500 font-medium">{anomaly.region} • {anomaly.time}</p>
                       </div>
                       <div className="text-right flex flex-col items-end">
                         <p className="text-sm font-mono text-white mb-2">{anomaly.cost}</p>
@@ -169,7 +169,7 @@ export const Hero = () => {
                     </div>
                     {/* Always visible CTAs with high contrast in new Framer style */}
                     <div className="flex space-x-2 mt-2 pt-3 border-t border-white/5">
-                      <button className="flex-1 text-[11px] bg-white text-black hover:bg-slate-200 py-1.5 rounded-full transition-colors font-bold">Investigate</button>
+                      <button className="flex-1 text-[11px] bg-white text-black hover:bg-neutral-200 py-1.5 rounded-full transition-colors font-bold">Investigate</button>
                       <button className="flex-1 text-[11px] bg-white/5 hover:bg-white/10 text-white py-1.5 rounded-full transition-colors font-semibold border border-white/5">Dismiss</button>
                     </div>
                   </motion.div>

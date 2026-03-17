@@ -24,7 +24,7 @@ export const Navbar = () => {
           
           {/* Logo */}
           <div className="flex items-center cursor-pointer group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-white to-slate-400 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-white to-neutral-400 flex items-center justify-center mr-3 group-hover:scale-105 transition-transform duration-300">
               <span className="text-black font-bold text-xl tracking-tighter">C</span>
             </div>
             <span className="text-xl font-bold text-white tracking-tight">CostPilot</span>
@@ -36,7 +36,7 @@ export const Navbar = () => {
               <a 
                 key={item} 
                 href={`#${item.toLowerCase()}`}
-                className="text-sm font-medium text-slate-400 hover:text-white transition-colors duration-200"
+                className="text-sm font-medium text-neutral-400 hover:text-white transition-colors duration-200"
               >
                 {item}
               </a>
@@ -51,7 +51,7 @@ export const Navbar = () => {
 
           {/* Mobile Menu Button (stub) */}
           <div className="md:hidden flex items-center">
-            <button className="text-slate-400 hover:text-white">
+            <button className="text-neutral-400 hover:text-white">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
             </button>
           </div>

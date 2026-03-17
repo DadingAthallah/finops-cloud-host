@@ -34,7 +34,7 @@ export const HowItWorks = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-slate-400 max-w-2xl mx-auto"
+            className="text-neutral-400 max-w-2xl mx-auto"
           >
             No complex setup. No agent installation. No code changes required.
           </motion.p>
@@ -55,11 +55,11 @@ export const HowItWorks = () => {
             >
               {i !== steps.length - 1 && (
                 <div className="hidden md:flex absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#101010] border border-white/10 rounded-full items-center justify-center z-20 group cursor-default">
-                  <ArrowRight className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
+                  <ArrowRight className="w-5 h-5 text-neutral-500 group-hover:text-white transition-colors" />
                 </div>
               )}
               <h3 className="text-xl md:text-2xl font-bold text-white mb-4 tracking-tight">{step.title}</h3>
-              <p className="text-slate-400 text-[15px] leading-relaxed md:pr-4">
+              <p className="text-neutral-400 text-[15px] leading-relaxed md:pr-4">
                 {step.description}
               </p>
             </div>

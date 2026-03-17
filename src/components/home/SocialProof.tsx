@@ -13,7 +13,7 @@ export const SocialProof = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center gap-12 items-center grayscale">
           {logos.map((logo) => (
-             <div key={logo.name} className={`text-xl font-bold text-slate-400 ${logo.opacity} hover:opacity-100 transition-opacity`}>
+             <div key={logo.name} className={`text-xl font-bold text-neutral-400 ${logo.opacity} hover:opacity-100 transition-opacity`}>
                {logo.name}
              </div>
           ))}

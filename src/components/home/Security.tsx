@@ -13,7 +13,7 @@ export const Security = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
               Security is our first priority.
             </h2>
-            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+            <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
               We know that billing data is sensitive. That's why we built CostPilot with a multi-layered security model that gives you total control.
             </p>
           </div>
@@ -39,7 +39,7 @@ export const Security = () => {
                   </div>
                   <div>
                     <h4 className="text-white text-lg font-bold mb-1">{item.title}</h4>
-                    <p className="text-slate-500 text-sm max-w-md">{item.desc}</p>
+                    <p className="text-neutral-500 text-sm max-w-md">{item.desc}</p>
                   </div>
                 </div>
                 <div className="text-emerald-500/50 text-[10px] font-bold tracking-widest uppercase hidden md:block">
@@ -54,18 +54,18 @@ export const Security = () => {
                 <div className="w-3 h-3 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
                 <div className="flex flex-col">
                   <span className="text-white text-xs font-bold tracking-wider uppercase">System Status: All Operational</span>
-                  <span className="text-slate-500 text-[10px]">Real-time monitoring enabled for all regions</span>
+                  <span className="text-neutral-500 text-[10px]">Real-time monitoring enabled for all regions</span>
                 </div>
              </div>
              <div className="flex items-center gap-8">
                <div className="text-center">
                  <div className="text-white text-sm font-bold">99.99%</div>
-                 <div className="text-slate-500 text-[10px] uppercase tracking-tighter">Uptime</div>
+                 <div className="text-neutral-500 text-[10px] uppercase tracking-tighter">Uptime</div>
                </div>
                <div className="w-px h-8 bg-white/10"></div>
                <div className="text-center">
                  <div className="text-white text-sm font-bold">Grade A</div>
-                 <div className="text-slate-500 text-[10px] uppercase tracking-tighter">SSL Rating</div>
+                 <div className="text-neutral-500 text-[10px] uppercase tracking-tighter">SSL Rating</div>
                </div>
              </div>
           </div>

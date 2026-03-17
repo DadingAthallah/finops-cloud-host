@@ -40,7 +40,7 @@ export const FAQ = () => {
           >
             Common questions.
           </motion.h2>
-          <p className="text-slate-400">
+          <p className="text-neutral-400">
             Everything you need to know about CostPilot and FinOps.
           </p>
         </div>
@@ -59,14 +59,14 @@ export const FAQ = () => {
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 className="w-full flex items-center justify-between py-8 text-left transition-colors group"
               >
-                <span className={`font-semibold text-base md:text-lg pr-8 transition-colors ${openIndex === i ? 'text-white' : 'text-slate-300 group-hover:text-white'}`}>
+                <span className={`font-semibold text-base md:text-lg pr-8 transition-colors ${openIndex === i ? 'text-white' : 'text-neutral-300 group-hover:text-white'}`}>
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0 ml-4">
                   {openIndex === i ? (
                     <Minus className="w-5 h-5 text-brand-blue" />
                   ) : (
-                    <Plus className="w-5 h-5 text-slate-500 group-hover:text-slate-300" />
+                    <Plus className="w-5 h-5 text-neutral-500 group-hover:text-neutral-300" />
                   )}
                 </div>
               </button>
@@ -79,7 +79,7 @@ export const FAQ = () => {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                   >
-                    <div className="pb-8 text-slate-400 text-sm md:text-base leading-relaxed max-w-2xl">
+                    <div className="pb-8 text-neutral-400 text-sm md:text-base leading-relaxed max-w-2xl">
                       {faq.answer}
                     </div>
                   </motion.div>

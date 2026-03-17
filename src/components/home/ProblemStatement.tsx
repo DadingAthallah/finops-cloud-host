@@ -20,7 +20,7 @@ export const ProblemStatement = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-slate-400 max-w-2xl mx-auto"
+            className="text-neutral-400 max-w-2xl mx-auto"
           >
             Engineering teams move fast, but finance teams are left playing catch-up with surprise monthly bills. CostPilot bridges the gap.
           </motion.p>
@@ -46,7 +46,7 @@ export const ProblemStatement = () => {
                 'Generic cloud provider dashboards',
                 'Disconnected engineering & finance'
               ].map((item, i) => (
-                <li key={i} className="flex items-start text-slate-400">
+                <li key={i} className="flex items-start text-neutral-400">
                   <XCircle className="w-5 h-5 text-red-500/50 mr-3 mt-0.5" />
                   <span>{item}</span>
                 </li>
@@ -73,7 +73,7 @@ export const ProblemStatement = () => {
                 'Deep internal visibility',
                 'Unified FinOps workflow'
               ].map((item, i) => (
-                <li key={i} className="flex items-start text-slate-200 font-medium">
+                <li key={i} className="flex items-start text-neutral-200 font-medium">
                   <CheckCircle2 className="w-5 h-5 text-brand-blue mr-3 mt-0.5" />
                   <span>{item}</span>
                 </li>

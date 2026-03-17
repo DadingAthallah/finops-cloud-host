@@ -30,7 +30,7 @@ export const CTA = () => {
               provider today.
             </h2>
             
-            <p className="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
+            <p className="text-neutral-400 text-lg mb-12 max-w-2xl mx-auto">
               Joint 500+ high-growth companies using CostPilot to regain spend accountability and focus on building, not billing.
             </p>
             
@@ -44,7 +44,7 @@ export const CTA = () => {
               </Button>
             </div>
             
-            <div className="mt-12 flex items-center justify-center gap-8 text-slate-500 text-xs font-medium uppercase tracking-widest">
+            <div className="mt-12 flex items-center justify-center gap-8 text-neutral-500 text-xs font-medium uppercase tracking-widest">
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-emerald-500"></div> No Credit Card Required
               </div>

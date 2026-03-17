@@ -38,7 +38,7 @@ export const Pricing = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Transparent Pricing</h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto tracking-tight">Start tracking and optimizing your cloud spend today. Cancel anytime.</p>
+          <p className="text-lg text-neutral-400 max-w-2xl mx-auto tracking-tight">Start tracking and optimizing your cloud spend today. Cancel anytime.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -93,7 +93,7 @@ export const Pricing = () => {
               <div className="flex justify-between items-start mb-6 relative z-10">
                 <div>
                   <h3 className="text-xl font-bold text-white tracking-tight">{plan.name}</h3>
-                  <p className="text-sm text-slate-500 font-medium mt-1">{plan.desc}</p>
+                  <p className="text-sm text-neutral-500 font-medium mt-1">{plan.desc}</p>
                 </div>
                 {plan.highlighted && (
                   <div className="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md">
@@ -104,15 +104,15 @@ export const Pricing = () => {
               
               <div className="mb-8">
                 <span className="text-5xl font-mono font-bold text-white tracking-tighter">{plan.price}</span>
-                {plan.price !== 'Custom' && <span className="text-sm font-medium text-slate-500 ml-2">{plan.period}</span>}
+                {plan.price !== 'Custom' && <span className="text-sm font-medium text-neutral-500 ml-2">{plan.period}</span>}
               </div>
 
               <div className="flex-grow">
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle2 className={`w-5 h-5 mr-3 flex-shrink-0 ${plan.highlighted ? 'text-white' : 'text-slate-600'}`} />
-                      <span className={`text-[13px] font-medium tracking-tight ${i === 0 && feature.includes('Everything') ? 'text-white' : 'text-slate-400'}`}>
+                      <CheckCircle2 className={`w-5 h-5 mr-3 flex-shrink-0 ${plan.highlighted ? 'text-white' : 'text-neutral-600'}`} />
+                      <span className={`text-[13px] font-medium tracking-tight ${i === 0 && feature.includes('Everything') ? 'text-white' : 'text-neutral-400'}`}>
                         {feature}
                       </span>
                     </li>

@@ -23,7 +23,7 @@ export const Footer = () => {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight">Get started with CostPilot</h2>
-          <Button variant="primary" className="bg-white text-black hover:bg-slate-200 px-8 py-3 text-base shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)] rounded-full font-bold">
+          <Button variant="primary" className="bg-white text-black hover:bg-neutral-200 px-8 py-3 text-base shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)] rounded-full font-bold">
             Book a live demo ↗
           </Button>
           
@@ -33,11 +33,11 @@ export const Footer = () => {
                 {/* Header */}
                 <div className="h-10 border-b border-white/5 bg-white/[0.02] flex items-center px-4 justify-between">
                    <div className="flex space-x-2">
-                     <div className="w-2.5 h-2.5 rounded-full bg-slate-800"></div>
-                     <div className="w-2.5 h-2.5 rounded-full bg-slate-800"></div>
-                     <div className="w-2.5 h-2.5 rounded-full bg-slate-800"></div>
+                     <div className="w-2.5 h-2.5 rounded-full bg-neutral-800"></div>
+                     <div className="w-2.5 h-2.5 rounded-full bg-neutral-800"></div>
+                     <div className="w-2.5 h-2.5 rounded-full bg-neutral-800"></div>
                    </div>
-                   <div className="flex space-x-4 text-[10px] font-bold tracking-widest uppercase text-slate-500">
+                   <div className="flex space-x-4 text-[10px] font-bold tracking-widest uppercase text-neutral-500">
                      <span className="text-white">Cost Breakdown</span>
                      <span>Forecasting</span>
                      <span>Optimization</span>
@@ -52,7 +52,7 @@ export const Footer = () => {
                    <div className="col-span-1 space-y-4">
                      <div className="h-3 w-24 bg-white/5 rounded-full"></div>
                      <div className="p-5 border border-white/5 bg-[#0a0a0a] rounded-2xl">
-                       <div className="text-[11px] font-bold text-slate-500 uppercase tracking-widest mb-2">Potential Savings</div>
+                       <div className="text-[11px] font-bold text-neutral-500 uppercase tracking-widest mb-2">Potential Savings</div>
                        <div className="text-3xl font-mono text-white font-bold tracking-tighter">$12,450</div>
                        <div className="mt-4 flex items-center text-[10px] text-black font-bold tracking-wide bg-white w-max px-3 py-1.5 rounded-full">24 actions available</div>
                      </div>
@@ -74,10 +74,10 @@ export const Footer = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 border-t border-slate-800/50 pt-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 border-t border-neutral-800/50 pt-12">
           <div className="col-span-2">
             <span className="text-xl font-bold text-white mb-6 block">CostPilot</span>
-            <div className="text-xs text-slate-500 space-y-2 mt-8">
+            <div className="text-xs text-neutral-500 space-y-2 mt-8">
                <p>X</p>
                <p>© CostPilot Company</p>
                <p>SOC Type II Certified</p>
@@ -87,28 +87,28 @@ export const Footer = () => {
           <div>
             <h4 className="text-white text-sm font-semibold mb-4">Product</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">What is CostPilot</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">Scorecards</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">Eng Intelligence</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">Self-Service</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">What is CostPilot</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Scorecards</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Eng Intelligence</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Self-Service</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-white text-sm font-semibold mb-4">Solutions</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">Production Readiness</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">Migration Tracking</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">Cost Optimization</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Production Readiness</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Migration Tracking</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Cost Optimization</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-white text-sm font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">About</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">About</a></li>
               <li><a href="#" className="text-brand-indigo hover:text-white text-sm transition-colors">Careers <span className="text-[10px] ml-1 px-1.5 py-0.5 rounded-full bg-brand-indigo/20 text-brand-indigo">WE'RE HIRING</span></a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
         </div>

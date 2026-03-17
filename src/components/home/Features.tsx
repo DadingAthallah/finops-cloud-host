@@ -69,7 +69,7 @@ export const Features = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight tracking-tight">
             Monitor, govern, and optimize
           </h2>
-          <p className="text-base text-slate-500 mb-8 max-w-2xl leading-relaxed font-medium">
+          <p className="text-base text-neutral-500 mb-8 max-w-2xl leading-relaxed font-medium">
             Stop waiting for the month-end bill. Get granular visibility into your cloud spend instantly, preventing bill shock before it happens.
           </p>
         </div>
@@ -85,7 +85,7 @@ export const Features = () => {
                   onClick={() => handleNavClick(`tracker-${i}`, tab.title)}
                   className="block w-full text-left py-8 px-6 border-b border-white/10 transition-colors hover:bg-white/[0.02]"
                 >
-                  <h3 className={`text-sm font-bold tracking-tight transition-colors ${activeTab === tab.title ? 'text-white' : 'text-slate-500'}`}>
+                  <h3 className={`text-sm font-bold tracking-tight transition-colors ${activeTab === tab.title ? 'text-white' : 'text-neutral-500'}`}>
                     {tab.title}
                   </h3>
                   <motion.div 
@@ -97,7 +97,7 @@ export const Features = () => {
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                     className="overflow-hidden"
                   >
-                    <p className="text-[13px] text-slate-400 leading-relaxed pt-3">
+                    <p className="text-[13px] text-neutral-400 leading-relaxed pt-3">
                       {tab.desc}
                     </p>
                   </motion.div>
@@ -148,9 +148,9 @@ export const Features = () => {
                                    <h4 className="text-white font-bold tracking-tight">Unusual EC2 Spend Detected</h4>
                                    <span className="text-red-400 font-mono text-sm tracking-tight">+$4,200</span>
                                  </div>
-                                 <p className="text-slate-500 text-[13px] font-medium leading-relaxed">us-east-1 region spike originated from <code className="bg-white/5 px-1 rounded">ml-training-cluster</code>.</p>
+                                 <p className="text-neutral-500 text-[13px] font-medium leading-relaxed">us-east-1 region spike originated from <code className="bg-white/5 px-1 rounded">ml-training-cluster</code>.</p>
                                  <div className="mt-5 flex space-x-3">
-                                   <button className="text-[11px] font-bold tracking-wide bg-white text-black hover:bg-slate-200 px-4 py-2 rounded-full transition" onClick={(e) => { e.stopPropagation(); setActiveTab(tab.title); }}>Investigate Route</button>
+                                   <button className="text-[11px] font-bold tracking-wide bg-white text-black hover:bg-neutral-200 px-4 py-2 rounded-full transition" onClick={(e) => { e.stopPropagation(); setActiveTab(tab.title); }}>Investigate Route</button>
                                    <button className="text-[11px] font-bold tracking-wide bg-white/5 hover:bg-white/10 text-white border border-white/5 px-4 py-2 rounded-full transition" onClick={(e) => { e.stopPropagation(); setActiveTab(tab.title); }}>Acknowledge</button>
                                  </div>
                                </div>
@@ -163,7 +163,7 @@ export const Features = () => {
                                    <h4 className="text-white font-bold tracking-tight">BigQuery Storage Increase</h4>
                                    <span className="text-amber-400 font-mono text-sm tracking-tight">+$820</span>
                                  </div>
-                                 <p className="text-slate-500 text-[13px] font-medium leading-relaxed">Table size grew by 4TB in dataset <code className="bg-white/5 px-1 rounded">analytics_prod</code>.</p>
+                                 <p className="text-neutral-500 text-[13px] font-medium leading-relaxed">Table size grew by 4TB in dataset <code className="bg-white/5 px-1 rounded">analytics_prod</code>.</p>
                                </div>
                             </div>
                           </div>
@@ -172,7 +172,7 @@ export const Features = () => {
                         {/* Budget Caps Content */}
                         {i === 1 && (
                           <div className="max-w-2xl mx-auto bg-[#1a1a1a] border border-white/5 rounded-2xl overflow-hidden w-full">
-                            <div className="grid grid-cols-4 gap-4 px-6 py-4 border-b border-white/5 bg-white/[0.02] text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+                            <div className="grid grid-cols-4 gap-4 px-6 py-4 border-b border-white/5 bg-white/[0.02] text-[10px] text-neutral-500 font-bold uppercase tracking-widest">
                               <div className="col-span-1">Team</div>
                               <div className="col-span-2">Utilization</div>
                               <div className="col-span-1 text-right">Status</div>
@@ -188,7 +188,7 @@ export const Features = () => {
                                    <div className="col-span-2 flex flex-col justify-center">
                                       <div className="flex justify-between text-xs font-mono mb-2">
                                         <span className="text-white tracking-tight">${b.spent.toLocaleString()}</span>
-                                        <span className="text-slate-500 tracking-tight">${b.budget.toLocaleString()}</span>
+                                        <span className="text-neutral-500 tracking-tight">${b.budget.toLocaleString()}</span>
                                       </div>
                                       <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
                                         <motion.div 
@@ -224,7 +224,7 @@ export const Features = () => {
                                   onClick={(e) => { e.stopPropagation(); setActiveTab(tab.title); }}
                                 >
                                   <div className={`absolute top-0 right-0 w-32 h-32 ${c.badgeColor} opacity-[0.03] rounded-full blur-2xl -mr-10 -mt-10 group-hover:opacity-[0.08] transition-opacity`}></div>
-                                  <h4 className="text-slate-500 text-[11px] font-bold uppercase tracking-widest mb-4 flex items-center">
+                                  <h4 className="text-neutral-500 text-[11px] font-bold uppercase tracking-widest mb-4 flex items-center">
                                     <div className={`w-2 h-2 rounded-full ${c.badgeColor} mr-2`}></div>
                                     {c.name}
                                   </h4>

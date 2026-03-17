@@ -29,7 +29,7 @@ export const Integrations = () => {
           >
             Connect to everything.
           </motion.h2>
-          <p className="text-slate-400">
+          <p className="text-neutral-400">
             One-click integrations with your entire cloud and developer ecosystem.
           </p>
         </div>
@@ -57,7 +57,7 @@ export const Integrations = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-sm text-slate-500 font-mono tracking-widest uppercase">
+          <p className="text-sm text-neutral-500 font-mono tracking-widest uppercase">
             + 40 more integrations coming soon
           </p>
         </div>
